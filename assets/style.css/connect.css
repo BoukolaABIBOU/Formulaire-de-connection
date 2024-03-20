@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bt-prin{
+    flex-wrap: wrap;
+    display: flex;
+   background-color: aqua;
+   width: 900px;
+   height: 500px;
+   margin:auto;
+   margin-top: 60px;
+   border-radius: 15px ;
+   box-shadow: 0 0 0 2px rgba(5, 5, 5, 0.1);
+}
+.un{
+    background-color:#fff;
+    height:500px;
+    width: 500px; 
+    border-radius: 15px 0 0 15px;    
+}
+main{
+    /* background-color: blueviolet; */
+    height:500px ;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main>img{
+    border-radius: 0 15px 15px 0;
+}
+h2{
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 7px black;  
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ } 
+ main>h2{
+     color:#fff
+ }
+.one{
+    Color: rgba(3, 3, 3, 0.8);
+    height: 30px;
+    width: 130px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif ;
+    position: relative;
+}
+.one::after{
+    content:"" ;
+    width: 80px;
+    height:2px;
+    position: absolute;
+    background-color:rgba(3, 3, 3, 0.8);
+    margin-left: 50px;
+}
+.two{
+    background-color: rgba(128, 128, 128 ,.3);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px whitesmoke,0 0 0 3px rgba(75, 75, 233, 0.9) ;
+    position: relative;
+    cursor: pointer;
+}
+.two::after{
+    content: "";
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow:0 0 0 4px whitesmoke;
+    position: absolute;
+    margin-top: 84px;
+    margin-left:-18px;
+}
+.three{
+    /* background-color: cornflowerblue; */
+    height: 80px;
+    width:300px ;
+}
+.three>form>.input input[type=text],.three>form>.input input[type=password]{
+    width:300px ;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold ;
+    border: none;
+    border-bottom: 1px solid gray ;
+    padding: 15px 10px ;
+    transition: all .7s ease; 
+    cursor: pointer;  
+}
+.input input[type=text]:nth-child(1){
+    margin-bottom:8px;
+}
+.three>form>.input input[type=text]:focus::placeholder,.three>form>.input input[type=password]:focus::placeholder{
+    color: rgba(75, 75, 233, 0.9) ;
+}
+.three>form>.input input[type=text]:focus,.three>form>.input input[type=password]:focus{
+    border-bottom: 1px solid rgba(75, 75, 233, 0.9) ;
+}
+.ctn{
+    /* background-color: aqua; */
+    height: 45px;
+    width:155px ;
+    margin:auto;
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(206, 204, 204);
+    
+}
+.ctn>.for{
+    background:linear-gradient(to right, rgba(75, 0, 130,.5),tomato) ;
+    color: #ffff;
+    height: 30px;
+    width:150px ;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    transition: all .7s ease;
+    border-bottom-color: 2px solid rgba(255, 255, 255,.1);
+    padding: 4px 12px;
+    cursor: pointer;
+}
+.for:hover{
+    box-shadow:0 0 0 2px rgba(75, 75, 233, 0.9);
+    color:rgba(75, 75, 233, 0.9);
+    background:linear-gradient(to left , rgb(0, 0, 255,.3) ,white );
+}
+.five::before{
+      content: "ou";
+      color: black;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      box-shadow:0 0 0 4px #ffff;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 470px;
+      bottom:295px;
+      background-color: #ffff;
+     
+}
+
+.six{
+    background-color: rgba(3, 3, 3, 0.8);
+    color:white; 
+    width:150px ;
+    height: 30px;
+    border-bottom:1px solid black;
+    border-radius: 20px;
+    padding: 3px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(75, 0, 130,.5),tomato);
+}
+.six:hover{
+    background:linear-gradient(to left , rgb(0, 0, 255,.3) ,white );
+    color: rgba(75, 75, 233, 0.9);
+    box-shadow: 0 0 0 2px rgba(75, 75, 233, 0.9);
+}
+aside{
+    margin: auto;
+    margin-top: 20px;
+}
